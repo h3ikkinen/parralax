@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('videoMain');
+//     const video = document.getElementById('videoMain');
     // $('body').css('overflow', 'hidden')
-    console.log('video', video)
+//     console.log('video', video)
     
     const LANDING = {};
     LANDING.intro = document.querySelector(".preloader-page");
@@ -30,15 +30,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     setTimeout(() => {
         svgAnimation()
-        start(video)
+        start()
     }, 500)
 })
 
-function start(elem) {
-    elem.addEventListener('ended',function(){
-        console.log('dadada')
-        $.scrollify.move("#2");
-    })
+function start() {
+//     elem.addEventListener('ended',function(){
+//         console.log('dadada')
+//         $.scrollify.move("#2");
+//     })
     let closeTrigger = false;
     let scenes = document.querySelectorAll('.scene')
     setTimeout(() => {
